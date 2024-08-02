@@ -2,118 +2,108 @@ html {
     box-sizing: border-box;
 }
 
-
 /* Base styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  h1, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  
-    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
-      margin: 0;
-      padding: 10px;
-    }
-  
-    .text-box, .wish {
-      text-align: center;
-    }
-  
-    .wish-hbd, #wishText {
-      font-size: 1.5em;
-    }
-  
-    .girl-dp {
-      width: 80%;
-      height: auto;
-    }
-  
-    .baloons img {
-      width: 20%;
-    }
-  
-    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
-      font-size: 1em;
-    }
-  
-    .last-smile {
-      font-size: 2em;
-    }
-  
-    .fake-btn {
-      font-size: 1em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .container {
-      padding: 5px;
-    }
-  
-    .text-box, .wish {
-      padding: 5px;
-    }
-  
-    .wish-hbd, #wishText {
-      font-size: 1.2em;
-    }
-  
-    .girl-dp {
-      width: 90%;
-    }
-  
-    .baloons img {
-      width: 25%;
-    }
-  
-    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
-      font-size: 0.8em;
-    }
-  
-    .last-smile {
-      font-size: 1.5em;
-    }
-  
-    .fake-btn {
-      font-size: 0.9em;
-    }
-  }
-  
 body {
     margin: 0;
     font-family: "Work Sans", sans-serif;
     background-image: url(/img/love\ image.jpeg);
+    background-size: cover; /* Ensure background covers the entire screen */
+    background-position: center; /* Center the background image */
 }
 
 .container {
     height: 100vh;
-    width: 100vh;
+    width: 100vw; /* Changed to 100vw to cover full viewport width */
     margin: 0 auto;
     text-align: center;
-    visibility: hidden;
+    visibility: visible; /* Change to visible if you want it to be shown */
     position: relative;
     overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .text-box, .wish {
+        text-align: center;
+    }
+
+    .wish-hbd, #wishText {
+        font-size: 1.5em;
+    }
+
+    .girl-dp {
+        width: 80%;
+        height: auto;
+    }
+
+    .baloons img {
+        width: 20%;
+    }
+
+    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+        font-size: 1em;
+    }
+
+    .last-smile {
+        font-size: 2em;
+    }
+
+    .fake-btn {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .text-box, .wish {
+        padding: 5px;
+    }
+
+    .wish-hbd, #wishText {
+        font-size: 1.2em;
+    }
+
+    .girl-dp {
+        width: 90%;
+    }
+
+    .baloons img {
+        width: 25%;
+    }
+
+    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+        font-size: 0.8em;
+    }
+
+    .last-smile {
+        font-size: 1.5em;
+    }
+
+    .fake-btn {
+        font-size: 0.9em;
+    }
 }
 
 .container div.six {
@@ -141,7 +131,6 @@ body {
 }
 
 .one #name {
-    /* Xuong dong */
     white-space: nowrap;
     display: inline-block;
 }
@@ -163,7 +152,8 @@ body {
 }
 
 .four .text-box {
-    width: 600px;
+    width: 90%; /* Adjusted to be more responsive */
+    max-width: 600px; /* Set a max-width */
     margin: 0 auto;
     border: 3px solid #aaa;
     border-radius: 5px;
@@ -232,7 +222,6 @@ body {
     width: 80px;
     top: -35px;
     left: 41.5%;
-    /* transform: scale(0.1); */
 }
 
 .baloons img {
@@ -319,7 +308,6 @@ body {
 .wish-hbd {
     font-size: 3em;
     margin: 0;
-    /* text-transform: uppercase; */
 }
 
 .wish h5 {
@@ -338,7 +326,7 @@ body {
     cursor: pointer;
 }
 
-/* Media Queries */
+/* Adjustments for different heights and widths */
 @media screen and (max-height: 1000px) {
     .six .hat {
         left: 40%;
@@ -366,6 +354,7 @@ body {
 @media screen and (max-width: 500px) {
     .container {
         width: 90%;
+        height: auto; /* Adjust height to fit content */
     }
 
     .four .text-box {
@@ -400,6 +389,5 @@ body {
 
     .nine p {
         font-size: 1.5rem;
-        font-weight: lighter;
     }
 }
