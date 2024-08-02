@@ -2,6 +2,104 @@ html {
     box-sizing: border-box;
 }
 
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .text-box, .wish {
+      text-align: center;
+    }
+  
+    .wish-hbd, #wishText {
+      font-size: 1.5em;
+    }
+  
+    .girl-dp {
+      width: 80%;
+      height: auto;
+    }
+  
+    .baloons img {
+      width: 20%;
+    }
+  
+    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+      font-size: 1em;
+    }
+  
+    .last-smile {
+      font-size: 2em;
+    }
+  
+    .fake-btn {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  
+    .text-box, .wish {
+      padding: 5px;
+    }
+  
+    .wish-hbd, #wishText {
+      font-size: 1.2em;
+    }
+  
+    .girl-dp {
+      width: 90%;
+    }
+  
+    .baloons img {
+      width: 25%;
+    }
+  
+    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+      font-size: 0.8em;
+    }
+  
+    .last-smile {
+      font-size: 1.5em;
+    }
+  
+    .fake-btn {
+      font-size: 0.9em;
+    }
+  }
+  
 body {
     margin: 0;
     font-family: "Work Sans", sans-serif;
